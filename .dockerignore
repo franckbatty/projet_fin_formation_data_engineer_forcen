@@ -1,0 +1,22 @@
+# Ignorer le fichier .env (ne pas copier dans l’image)
+.env
+
+# Ignorer les environnements virtuels Python
+venv/
+__pycache__/
+*.pyc
+
+# Ignorer les fichiers temporaires et logs
+*.log
+*.tmp
+
+# Ignorer les données brutes (elles sont montées via volumes)
+# Le dossier 'data' est utilisé pour stocker les données brutes, il ne doit pas être copié dans l’image Docker
+# tel que csv, json, etc. qui sont utilisés pour l'entraînement et les tests
+data/
+
+
+# Ignorer les dossiers Git et fichiers inutiles
+.git
+.gitignore
+.dockerignore
